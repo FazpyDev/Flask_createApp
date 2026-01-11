@@ -1,0 +1,11 @@
+ {
+    "Basic": {
+        "Change Port": "BasicChangePort",
+        "Exit": "Exit"
+    },
+
+    "BasicTemplate": {
+        "Change Port": "BasicChangePort",
+        "Exit": "Exit"
+    }
+}
