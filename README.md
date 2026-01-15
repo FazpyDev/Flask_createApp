@@ -1,5 +1,4 @@
-# Flask_createApp
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/FazpyDev/Flask_createApp)
+# Flask_createApp_
 
 `Flask_createApp` is a command-line tool for quickly scaffolding new Flask projects. It provides an interactive interface to choose from a variety of pre-built templates, from a minimal single-file app to more complex structures with databases, blueprints, and Jinja templates. It's designed to be easily extensible, allowing you to add your own custom project templates.
 
