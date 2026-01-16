@@ -47,6 +47,8 @@ python -m PyInstaller ^
     --hidden-import app.Utils ^
     --add-data "%APP_DIR%\TemplateOptions.json;app" ^
     --add-data "%APP_DIR%\templates;app/templates" ^
+    --add-data "%APP_DIR%\templates;app/templates" ^
+    --add-data "%APP_DIR%\TemplateOptions.json;app" ^
     "%BUILD_APP%"
 
 if errorlevel 1 (
@@ -64,6 +66,9 @@ if not exist "%INSTALL_DIR%" (
 
 REM ---- Copy EXE ----
 copy /Y "%ROOT_DIR%dist\projgen.exe" "%INSTALL_DIR%" >nul
+
+xcopy "%APP_DIR%\templates" "%INSTALL_DIR%\templates" /E /I /Y
+copy "%APP_DIR%\TemplateOptions.json" "%INSTALL_DIR%" /Y
 
 REM ---- Add to PATH (user-level) ----
 echo Adding ProjGen to PATH...
